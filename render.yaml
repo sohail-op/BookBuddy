@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: bookbuddy-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port 8000
+    plan: starter
+    envVars:
+      - key: GOOGLE_APPLICATION_CREDENTIALS
+        value: credentials/service_account.json
+
+  - type: web
+    name: bookbuddy-frontend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run frontend/streamlit_app.py --server.port 8080
+    plan: starter

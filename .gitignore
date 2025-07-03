@@ -1,0 +1,19 @@
+credentials/service_account.json
+
+# Google service account credentials
+BookBuddy/credentials/service_account.json
+
+
+# Ignore Python virtual environment
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# Streamlit or FastAPI cache
+*.log
+*.sqlite3
