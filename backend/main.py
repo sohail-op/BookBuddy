@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from backend.schemas.chat import ChatRequest, ChatResponse
-from backend.agent.agent_core import get_agent_response
+from schemas.chat import ChatRequest, ChatResponse
+from agent.agent_core import get_agent_response
 
 app = FastAPI(title="Calendar Booking AI Agent")
 
