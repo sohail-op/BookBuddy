@@ -7,9 +7,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 SCOPES = ["https://www.googleapis.com/auth/calendar"]
-SERVICE_ACCOUNT_FILE = os.path.join(
-    os.path.dirname(__file__), "../../credentials/service_account.json"
-)
+SERVICE_ACCOUNT_FILE = "/etc/secrets/service_account.json"
+
 CALENDAR_ID = os.getenv("CALENDAR_ID")
 
 def format_datetime_range(start_iso, end_iso):
