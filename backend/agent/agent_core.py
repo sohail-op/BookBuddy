@@ -6,7 +6,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.agents import initialize_agent, AgentType, Tool
 from langchain.memory import ConversationBufferMemory
 
-from backend.agent.tools import check_availability, book_slot, suggest_slots
+from agent.tools import check_availability, book_slot, suggest_slots
 
 load_dotenv()
 
