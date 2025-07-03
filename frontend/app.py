@@ -24,7 +24,7 @@ if user_input:
         with st.chat_message("assistant"):
             with st.spinner("Thinking..."):
                 res = requests.post(
-                    "http://localhost:8000/chat",
+                    "https://bookbuddy-backend-tu4p.onrender.com/chat",
                     json={"message": user_input},
                     timeout=30,
                 )
